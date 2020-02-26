@@ -4,7 +4,12 @@ from flask_migrate import Migrate
 
 
 app = Flask(__name__)
+<<<<<<< HEAD
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://deni:Arc3lon2020@rm-d9j68ze953q6449rpxo.pgsql.ap-southeast-5.rds.aliyuncs.com:3433/mydb'
+=======
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://deni@localhost:5432/mydb
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://deni:Arc3lon2020@rm-d9j68ze953q6449rp.pgsql.ap-southeast-5.rds.aliyuncs.com:3433/mydb'
+>>>>>>> 920ae1ea0dc3723e6ba43c842669907067ae2a45
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
